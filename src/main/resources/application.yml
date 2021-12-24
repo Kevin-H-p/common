@@ -1,0 +1,35 @@
+server:
+  port: 8082
+
+swagger:
+  enable: true
+
+token:
+  secret:
+    asddf4681s65ddf1
+  expire:
+    1800
+spring:
+  jackson:
+    time-zone: GMT+8
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 200
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Scada2016!
+    url: jdbc:mysql://192.168.10.99:3306/yfpublic?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true
+
+
+
