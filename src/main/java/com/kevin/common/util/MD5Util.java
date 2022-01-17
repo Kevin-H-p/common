@@ -9,15 +9,15 @@ import java.security.NoSuchAlgorithmException;
  * @date 2021-12-20 15:35
  */
 public class MD5Util {
-    static final char hexDigits[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
-    static final char hexDigitsLower[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
-            'f' };
+    static final char hexDigits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    static final char hexDigitsLower[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
+            'f'};
 
     /**
      * 对字符串 MD5 无盐值加密
      *
      * @param plainText 传入要加密的字符串
-     * @return MD5加密后生成32位(小写字母+数字)字符串
+     * @return MD5加密后生成32位(小写字母 + 数字)字符串
      */
     public static String MD5Lower(String plainText) {
         try {
@@ -40,7 +40,7 @@ public class MD5Util {
      * 对字符串 MD5 加密
      *
      * @param plainText 传入要加密的字符串
-     * @return MD5加密后生成32位(大写字母+数字)字符串
+     * @return MD5加密后生成32位(大写字母 + 数字)字符串
      */
     public static String MD5Upper(String plainText) {
         try {
@@ -73,7 +73,7 @@ public class MD5Util {
      *
      * @param plainText 传入要加密的字符串
      * @param saltValue 传入要加的盐值
-     * @return MD5加密后生成32位(小写字母+数字)字符串
+     * @return MD5加密后生成32位(小写字母 + 数字)字符串
      */
     public static String MD5Lower(String plainText, String saltValue) {
         try {
@@ -98,7 +98,7 @@ public class MD5Util {
      *
      * @param plainText 传入要加密的字符串
      * @param saltValue 传入要加的盐值
-     * @return MD5加密后生成32位(大写字母+数字)字符串
+     * @return MD5加密后生成32位(大写字母 + 数字)字符串
      */
     public static String MD5Upper(String plainText, String saltValue) {
         try {
