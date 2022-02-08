@@ -3,7 +3,9 @@ server:
 
 swagger:
   enable: true
-
+logging:
+  file:
+    path: logs
 token:
   secret:
     asddf4681s65ddf1
